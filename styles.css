@@ -99,3 +99,124 @@ body{
 }
 .dark body{background: linear-gradient(180deg, #0a1020 0%, #0f1730 60%, #0a1020 100%);}
 .dark .site-header{background: linear-gradient(135deg, var(--brand) 0%, var(--brand-2) 100%);}
+
+/* Account deletion section styles */
+.process-steps, .deletion-info, .deletion-consequences, .retention-policy {
+  margin: 20px 0;
+  padding: 15px;
+  border-radius: 8px;
+  border-left: 4px solid var(--brand);
+}
+
+.process-steps {
+  background: rgba(147, 24, 24, 0.05);
+}
+
+.deletion-info {
+  background: rgba(59, 130, 246, 0.05);
+  border-left-color: #3b82f6;
+}
+
+.deletion-consequences {
+  background: rgba(245, 158, 11, 0.05);
+  border-left-color: #f59e0b;
+}
+
+.retention-policy {
+  background: rgba(16, 185, 129, 0.05);
+  border-left-color: #10b981;
+}
+
+.process-steps h3, .deletion-info h3, .deletion-consequences h3, .retention-policy h3 {
+  margin-top: 0;
+  margin-bottom: 12px;
+  font-size: 1.1rem;
+  font-weight: 600;
+}
+
+.process-steps ol {
+  margin: 0;
+  padding-left: 20px;
+}
+
+.process-steps ol li {
+  margin: 8px 0;
+  padding: 2px 0;
+}
+
+/* Dark theme adjustments for deletion section */
+.dark .process-steps {
+  background: rgba(147, 24, 24, 0.15);
+}
+
+.dark .deletion-info {
+  background: rgba(59, 130, 246, 0.15);
+}
+
+.dark .deletion-consequences {
+  background: rgba(245, 158, 11, 0.15);
+}
+
+.dark .retention-policy {
+  background: rgba(16, 185, 129, 0.15);
+}
+
+/* Additional styles for account deletion page */
+.important-info {
+  margin: 20px 0;
+  padding: 15px;
+  border-radius: 8px;
+  border-left: 4px solid #dc2626;
+  background: rgba(220, 38, 38, 0.05);
+}
+
+.important-info h3 {
+  margin-top: 0;
+  margin-bottom: 12px;
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: #dc2626;
+}
+
+.important-info h3:not(:first-child) {
+  margin-top: 20px;
+}
+
+.helpers {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin: 26px 0;
+}
+
+.helpers .btn {
+  border-color: var(--border);
+  background: transparent;
+  color: var(--text);
+  text-decoration: none;
+}
+
+.helpers .btn:hover {
+  background: var(--accent);
+  transform: translateY(-1px);
+}
+
+/* Dark theme for important info */
+.dark .important-info {
+  background: rgba(220, 38, 38, 0.15);
+}
+
+/* Mobile responsiveness for helpers */
+@media (max-width: 600px) {
+  .helpers {
+    flex-direction: column;
+    text-align: center;
+  }
+  
+  .helpers .btn {
+    width: 100%;
+    max-width: 300px;
+  }
+}
